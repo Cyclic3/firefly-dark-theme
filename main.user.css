@@ -1,3 +1,14 @@
+/* ==UserStyle==
+@name           firefly-dark-theme - 18/03/2019, 10:16:38
+@namespace      github.com/openstyles/stylus
+@homepageURL    https://github.com/Cyclic3/firefly-dark-theme
+@updateURL      https://github.com/Cyclic3/firefly-dark-theme/raw/master/main.user.css
+@version        1.0.0
+@description    A Stylus dark theme for Firefly-based webpages 
+@author         Cyclic3
+==/UserStyle== */
+
+@-moz-document domain("webserver.forest.org.uk") {
 body {
     background: #222;
     color: #eee;
@@ -83,4 +94,5 @@ ol {
 #sections * {
     background: inherit;
     color: #eee !important;    
+}
 }
