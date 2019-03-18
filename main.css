@@ -1,0 +1,86 @@
+body {
+    background: #222;
+    color: #eee;
+}
+input {
+    background: #444 !important;
+    color: #eee;
+}
+a {
+    text-shadow: none !important;
+    color: #8882ff !important;
+}
+a * {
+    color: #8882ff !important;
+}
+h1 {
+    background: #333 !important;
+    color: #eee;
+}
+h2 {
+    background: #333 !important;
+    color: #eee;
+}
+h3 {
+    background: #333 !important;
+    color: #eee;
+}
+.ff-segment h4 {
+    background: #444 !important;
+    color: #eee;
+}
+input * {
+    background: #444 !important;
+    color: #eee;
+}
+#the-page {
+    background: #333;
+    color: #eee;
+    border-color: #555 !important;
+}
+#the-page * {
+    background: #333;
+    color: #eee;
+    border-color: #555 !important;
+}
+
+.ff-login * {
+    background: #222;
+    color: #eee;
+}
+
+.ff-login-box * {
+    background: #333;
+    color: #eee;
+    border-color: #555;    
+}
+
+#userbar-react-component * {
+    background: black;
+    color: #eee !important;
+    border-color: #444;
+}
+ol {
+    border: 1.5px solid #555 !important;
+}
+.ff-timetable-block {
+    padding: 0em !important;
+    
+    border-top: 1px solid #555 !important;
+    border-bottom: 1px solid #555 !important;
+    border-left: none;
+    border-right: none;
+}
+
+.section-image {
+    display: none !important;
+}
+
+* .selected {
+    background: #111 !important;
+}
+
+#sections * {
+    background: inherit;
+    color: #eee !important;    
+}
