@@ -3,96 +3,101 @@
 @namespace      github.com/openstyles/stylus
 @homepageURL    https://github.com/Cyclic3/firefly-dark-theme
 @updateURL      https://github.com/Cyclic3/firefly-dark-theme/raw/master/main.user.css
-@version        1.0.0
+@version        1.1.0
 @description    A Stylus dark theme for Firefly-based webpages 
 @author         Cyclic3
 ==/UserStyle== */
 
 @-moz-document domain("webserver.forest.org.uk") {
-body {
-    background: #222;
-    color: #eee;
-}
-input {
-    background: #444 !important;
-    color: #eee;
-}
-a {
-    text-shadow: none !important;
-    color: #8882ff !important;
-}
-a * {
-    color: #8882ff !important;
-}
-h1 {
-    background: #333 !important;
-    color: #eee;
-}
-h2 {
-    background: #333 !important;
-    color: #eee;
-}
-h3 {
-    background: #333 !important;
-    color: #eee;
-}
-.ff-segment h4 {
-    background: #444 !important;
-    color: #eee;
-}
-input * {
-    background: #444 !important;
-    color: #eee;
-}
-#the-page {
-    background: #333;
-    color: #eee;
-    border-color: #555 !important;
-}
-#the-page * {
-    background: #333;
-    color: #eee;
-    border-color: #555 !important;
-}
+    body {
+        background: #222;
+        color: #eee;
+    }
+    input {
+        background: #444 !important;
+        color: #eee;
+    }
+    a {
+        text-shadow: none !important;
+        color: #3dad71 !important;
+    }
+    a * {
+        color: inherit;
+    }
+    h1, h2, h3, .ff-segment h4 {
+        background: inherit !important;
+        color: #eee;
+    }
+    input * {
+        background: #444 !important;
+        color: #eee;
+    }
+    #the-page, .ff-login-box {
+        background: #333;
+        color: #eee;
+        border-color: #555 !important;
+    }
+    #the-page *, .ff-login-personalised-background {
+        background: inherit;
+        color: inherit;
+        border-color: inherit !important;
+    }
 
-.ff-login * {
-    background: #222;
-    color: #eee;
-}
+    #userbar-react-component * {
+        background: black;
+        color: #eee !important;
+        border-color: #444;
+    }
+    ol {
+        border: 1.5px solid #555 !important;
+    }
+    .ff-timetable-block {
+        padding: 0em !important;
 
-.ff-login-box * {
-    background: #333;
-    color: #eee;
-    border-color: #555;    
-}
+        border-top: 1px solid #555 !important;
+        border-bottom: 1px solid #555 !important;
+        border-left: none;
+        border-right: none;
+    }
 
-#userbar-react-component * {
-    background: black;
-    color: #eee !important;
-    border-color: #444;
-}
-ol {
-    border: 1.5px solid #555 !important;
-}
-.ff-timetable-block {
-    padding: 0em !important;
+    .section-image {
+        display: none !important;
+    }
+
+    .selected {
+        background: #111 !important;
+    }
+    li.ff-nav-children-shown > a {
+        background: #111 !important;
+    }
+    .selected > h3 {
+        background: #111 !important;
+    }
+    li.ff-calendar-item.selected {
+        background: inherit !important;
+    }
     
-    border-top: 1px solid #555 !important;
-    border-bottom: 1px solid #555 !important;
-    border-left: none;
-    border-right: none;
-}
-
-.section-image {
-    display: none !important;
-}
-
-* .selected {
-    background: #111 !important;
-}
-
-#sections * {
-    background: inherit;
-    color: #eee !important;    
-}
+    .ff-login-footer {
+        background: inherit !important;
+        color: inherit !important;
+        border-color: inherit !important;
+    }
+    
+    /* nasty hack to get better background */
+    .ff-login-personalised-background {
+        content: url("/Templates/Nautilus/custom/logo.png");
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        top: 30%;
+        max-height: 80px;
+        max-width: 100%;
+        margin-top: 10%;
+        margin-bottom: 80px;
+    }
+    
+    /*This is how firefly does it, so... */
+    .ff6-nav.section-dashboard #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-dashboard > a, .ff6-nav.section-resources #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-resources > a, .ff6-nav.section-planner #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-planner > a, .ff6-nav.section-tasks #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-tasks > a, .ff6-nav.section-markbook #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-markbook > a, .ff6-nav.section-classes #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-classes > a, .ff6-nav.section-students #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-students > a, .ff6-nav.section-personal-pages #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-personal-pages > a, .ff6-nav.section-personal-blog #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-personal-blog > a, .ff6-nav.section-your-children #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-your-children > a, .ff6-nav.section-your-child #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-your-child > a, .ff6-nav.section-school-information #section-menu .ff-nav-sections ul.ff-nav-level-1 > li.ff-mainnav-school-information > a {
+        background: #111 !important;
+    }
 }
