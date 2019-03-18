@@ -3,50 +3,44 @@
 @namespace      github.com/openstyles/stylus
 @homepageURL    https://github.com/Cyclic3/firefly-dark-theme
 @updateURL      https://github.com/Cyclic3/firefly-dark-theme/raw/master/main.user.css
-@version        1.1.0
+@version        2.0.0
 @description    A Stylus dark theme for Firefly-based webpages 
 @author         Cyclic3
 ==/UserStyle== */
 
 @-moz-document domain("webserver.forest.org.uk") {
+    *, .ff-message-content, .ff-comment-content, #the-page *, .ff-login-personalised-background, 
+    a *, h1, h2, h3, h4, h4 .ff-segment {
+        background: inherit;
+        color: inherit;
+        border-color: #555 !important;
+        border-left-color: #555 !important;
+        border-right-color: #555 !important;
+        border-top-color: #555 !important;
+        border-bottom-color: #555 !important;
+        text-shadow: none !important;
+    }
+    body, #the-page, .ff-login-box, input, h1, h2, h3, h4 .ff-segment h4, input *, .inputwrapper,
+    #userbar-react-component, .userbar__wrapper__1spG_ {
+        color: #eee !important;
+    }
     body {
         background: #222;
-        color: #eee;
-    }
-    input {
-        background: #444 !important;
-        color: #eee;
-    }
-    a {
-        text-shadow: none !important;
-        color: #3dad71 !important;
-    }
-    a * {
-        color: inherit;
-    }
-    h1, h2, h3, .ff-segment h4 {
-        background: inherit !important;
-        color: #eee;
-    }
-    input * {
-        background: #444 !important;
-        color: #eee;
     }
     #the-page, .ff-login-box {
         background: #333;
-        color: #eee;
-        border-color: #555 !important;
     }
-    #the-page *, .ff-login-personalised-background {
-        background: inherit;
-        color: inherit;
-        border-color: inherit !important;
+    input, input *, .inputwrapper, .item__link__kvRyA.item__link--button__1QEUe {
+        background: #444 !important;
     }
-
-    #userbar-react-component * {
+    a {
+        color: #3dad71 !important;
+    }
+    h1, h2, h3, .ff-segment h4, li.ff-calendar-item.selected {
+        background: inherit !important;
+    }
+    #userbar-react-component, .userbar__wrapper__1spG_ {
         background: black;
-        color: #eee !important;
-        border-color: #444;
     }
     ol {
         border: 1.5px solid #555 !important;
@@ -59,22 +53,11 @@
         border-left: none;
         border-right: none;
     }
-
-    .section-image {
+    #section-header > .section-image {
         display: none !important;
     }
-
-    .selected {
+    .selected, li.ff-nav-children-shown > a, .selected > h3 {
         background: #111 !important;
-    }
-    li.ff-nav-children-shown > a {
-        background: #111 !important;
-    }
-    .selected > h3 {
-        background: #111 !important;
-    }
-    li.ff-calendar-item.selected {
-        background: inherit !important;
     }
     
     .ff-login-footer {
