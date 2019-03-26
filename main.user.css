@@ -3,7 +3,7 @@
 @namespace      github.com/openstyles/stylus
 @homepageURL    https://github.com/Cyclic3/firefly-dark-theme
 @updateURL      https://github.com/Cyclic3/firefly-dark-theme/raw/master/main.user.css
-@version        2.3.0
+@version        3.0.0
 @description    A Stylus dark theme for Firefly-based webpages 
 @author         Cyclic3
 ==/UserStyle== */
@@ -94,6 +94,9 @@
     }
     .ff_module-mark-and-grade__grade {
         background: #a00 !important;
+    }
+    .ff_module-mark-and-grade__percentage {
+        background: #088 !important;
     }
     
     .ff-timetable-today, .ff-resourcelist-resource {
