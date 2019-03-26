@@ -3,7 +3,7 @@
 @namespace      github.com/openstyles/stylus
 @homepageURL    https://github.com/Cyclic3/firefly-dark-theme
 @updateURL      https://github.com/Cyclic3/firefly-dark-theme/raw/master/main.user.css
-@version        3.0.0
+@version        3.1.0
 @description    A Stylus dark theme for Firefly-based webpages 
 @author         Cyclic3
 ==/UserStyle== */
@@ -27,8 +27,8 @@
     body {
         background: #222;
     }
-    #the-page, .ff-login-box {
-        background: #333;
+    #the-page, .ff-login-box, .leading > a {
+        background-color: #333 !important;
     }
     input, input *, .inputwrapper, .item__link__kvRyA.item__link--button__1QEUe {
         background: #444 !important;
