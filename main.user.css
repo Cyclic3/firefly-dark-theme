@@ -78,12 +78,34 @@
         margin-top: 10%;
         margin-bottom: 80px;
     }
+    .ff-message-close{
+        background-image: url("/Templates/lib/images/dashboard/icon-close.png") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        top: 1px;
+        right: 1px;
+    }
+    .ff-comment-avatar,.ff-search-result-thumbnail{
+        width: 50px;
+    }
+    .ff_module-mark-and-grade__mark {
+        background: #eee !important;
+        color: #333 !important;
+    }
+    .ff_module-mark-and-grade__grade {
+        background: #a00 !important;
+    }
     
     .ff-timetable-today, .ff-resourcelist-resource {
         background: #222 !important;
     }
     .ff-resourcelist-resource-type-folder {
         background: #181818 !important;
+    }
+    
+    .ff-calendar-item > ol, .ff_container-dashboard-item-repeater__items, .ff-messages,
+    .ff-dashboard-writeblog {
+        border: none !important;
     }
     
     /*This is how firefly does it, so... */
